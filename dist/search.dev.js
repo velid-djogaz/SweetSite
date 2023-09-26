@@ -1,6 +1,5 @@
 "use strict";
 
-// Function to filter products based on the search input
 function filterProducts() {
   var searchInput = document.getElementById("searchInput").value.toLowerCase();
   var products = document.querySelectorAll(".product");
@@ -8,16 +7,14 @@ function filterProducts() {
     var productName = product.getAttribute("name").toLowerCase();
 
     if (productName.includes(searchInput)) {
-      product.style.display = "block"; // Show matching products
+      product.style.display = "block";
     } else {
-      product.style.display = "none"; // Hide non-matching products
+      product.style.display = "none";
     }
   });
-} // Event listeners
+}
 
-
-document.getElementById("searchInput").addEventListener("input", filterProducts); // Capture Enter key press and trigger the search
-
+document.getElementById("searchInput").addEventListener("input", filterProducts);
 document.getElementById("searchInput").addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     filterProducts();

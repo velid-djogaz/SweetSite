@@ -37,8 +37,7 @@ function prevSlide() {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   showSlide(currentSlide);
   updateButtons();
-} // Add event listeners for manual navigation
-
+}
 
 prevButton.addEventListener('click', function () {
   prevSlide();
@@ -52,8 +51,7 @@ sliderButtons.forEach(function (button, i) {
     showSlide(currentSlide);
     updateButtons();
   });
-}); // Initialize the slider
-
+});
 showSlide(currentSlide);
 updateButtons();
 //# sourceMappingURL=slider.dev.js.map

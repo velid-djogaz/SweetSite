@@ -1,6 +1,5 @@
 "use strict";
 
-// Listen for clicks on "Add to Cart" buttons
 var addToCartButtons = document.querySelectorAll(".add-to-cart");
 addToCartButtons.forEach(function (button) {
   button.addEventListener("click", function (event) {
@@ -8,15 +7,13 @@ addToCartButtons.forEach(function (button) {
     var productPrice = parseFloat(event.target.getAttribute("data-product-price"));
     addToCart(productName, productPrice);
     button.addEventListener("click", function (event) {
-      // Change the background color when clicked
       button.style.backgroundColor = "#333";
-    }, 100); // After a short delay, revert the background color
-
+    }, 100);
     setTimeout(function () {
       button.style.backgroundColor = "#ff5733";
-    }, 100); // 200 milliseconds (adjust as needed)
+    }, 100);
   });
-}); // Function to add a product to the cart
+});
 
 function addToCart(productName, productPrice) {
   var cart = getCart();
@@ -25,13 +22,11 @@ function addToCart(productName, productPrice) {
     price: productPrice
   });
   saveCart(cart);
-} // Function to get the cart from local storage
-
+}
 
 function getCart() {
   return JSON.parse(localStorage.getItem("cart")) || [];
-} // Function to save the cart to local storage
-
+}
 
 function saveCart(cart) {
   localStorage.setItem("cart", JSON.stringify(cart));

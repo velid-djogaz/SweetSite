@@ -38,7 +38,6 @@ function prevSlide() {
     updateButtons();
 }
 
-// Add event listeners for manual navigation
 prevButton.addEventListener('click', () => {
     prevSlide();
 });
@@ -55,6 +54,5 @@ sliderButtons.forEach((button, i) => {
     });
 });
 
-// Initialize the slider
 showSlide(currentSlide);
 updateButtons();

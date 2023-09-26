@@ -1,10 +1,8 @@
-/* Reset some default styles */
 body, h1, p {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -19,32 +17,31 @@ header {
 }
 
 .header-title {
-    font-size: 36px; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
-    color: #ff5733; /* Set the text color, you can choose your preferred color code */
-    text-align: center; /* Center-align the text horizontally */
-    margin: 20px 0; /* Add some margin for spacing, you can adjust this value */
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff5733;
+    text-align: center;
+    margin: 20px 0;
   }
 
-/* Navbar styles */
 nav {
     display: flex;
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-    text-align: right; /* Align the text to the right */
-    padding: 0 100px 10px; /* Add some padding for spacing */
+    text-align: right;
+    padding: 0 100px 10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0; /* Remove any default margin */
+    margin: 0;
     padding: 0;
 }
 
 nav li {
-    display: inline; /* Display list items horizontally */
-    margin-left: 50px; /* Add spacing between list items */
+    display: inline;
+    margin-left: 50px;
 }
 
 nav a {
@@ -58,10 +55,9 @@ nav a:hover {
     color: #ff5733;
 }
 
-/* Search box styles */
 .search-box {
     align-items: center;
-    margin-top: 10px; /* Add some spacing from the navigation links */
+    margin-top: 10px;
 }
 
 .search-box input[type="text"] {
@@ -70,7 +66,7 @@ nav a:hover {
     border-bottom: 2px solid #fff;
     background-color: transparent;
     color: #fff;
-    margin-right: 5px; /* Add spacing between input and icon */
+    margin-right: 5px;
 }
 
 .search-box input[type="text"]::placeholder {
@@ -82,7 +78,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* CSS for Search Results */
 #searchResults {
     max-width: 300px;
     background-color: #fff;
@@ -96,24 +91,20 @@ nav a:hover {
     display: none;
 }
 
-/* CSS for Individual Result Items */
 #searchResults > div {
     padding: 5px 0;
     border-bottom: 1px solid #ccc;
 }
 
-/* Style for the last result item (remove the border) */
 #searchResults > div:last-child {
     border-bottom: none;
 }
 
-/* Logo styles */
 .logo img {
-    height: 30px; /* Adjust the height of your logo */
+    height: 30px;
     padding-bottom: 15px;
 }
 
-/* Slider styles */
 .slider {
     position: relative;
     overflow: hidden;
@@ -122,7 +113,7 @@ nav a:hover {
     margin: 0 auto;
     text-align: center;
     height: 400px;
-    position: relative; /* Add this */
+    position: relative;
 }
 
 .slides {
@@ -136,7 +127,6 @@ nav a:hover {
     position: relative;
 }
 
-/* Triangle button styles */
 .prev-button,
 .next-button {
     position: absolute;
@@ -167,15 +157,14 @@ nav a:hover {
     right: 0;
 }
 
-/* Slider dots styles */
 .slider-dots {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* Adjust margin as needed */
-    position: absolute; /* Add this */
-    bottom: 10px; /* Adjust the vertical position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider-button {
@@ -193,34 +182,33 @@ nav a:hover {
 }
 
 .featured-products {
-    text-align: center; /* Center the text */
-    margin-top: 60px; /* Add margin for spacing */
-    font-size: 30px; /* Adjust font size */
-    color: #333; /* Set the text color */
-    /* Add any other styles as needed */
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #333;
 }
 
 .product-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 100px 50px; /* Add padding to the product section to increase margins from screen edge */
+    padding: 20px 100px 50px;
 }
 
 .product {
     text-align: center;
-    margin: 10px; /* Reduce the margin between products */
+    margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    width: calc(25% - 20px); /* Ensure four products per row with 20px margin on each side */
+    width: calc(25% - 20px);
     box-sizing: border-box;
-    position: relative; /* Add relative positioning */
+    position: relative;
 }
 
 .product img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s ease; /* Add hover transition */
+    transition: transform 0.3s ease;
     transition: 0.3s;
 }
 
@@ -230,70 +218,69 @@ nav a:hover {
 }
 
 .product p {
-    position: absolute; /* Position details over the image */
-    top: 20%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    position: absolute;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0; /* Start with 0 opacity */
-    color: #fff;
-    background-color: rgba(255, 87, 51, 0.8); /* Add a semi-transparent background */
-    padding: 10px; /* Add padding for readability */
-    width: 60%; /* Adjust the width as needed */
-    text-align: center; /* Center the text within the details */
     opacity: 0;
-    transition: 0.3s; /* Add fade-out transition */
+    color: #fff;
+    background-color: rgba(255, 87, 51, 0.8);
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 
 .product:hover p {
     transition: 1s;
-    opacity: 1; /* Show details on hover */
+    opacity: 1;
 }
 
 .product h3{
-    position: absolute; /* Position details over the image */
-    top: 40%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    position: absolute;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0; /* Start with 0 opacity */
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
-    padding: 10px; /* Add padding for readability */
-    width: 50%; /* Adjust the width as needed */
-    text-align: center; /* Center the text within the details */
     opacity: 0;
-    transition: 0.3s; /* Add fade-out transition */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .product:hover h3{
     transition: 1s;
-    opacity: 1; /* Show details on hover */
+    opacity: 1;
 }
 
 .product span{
-    position: absolute; /* Position details over the image */
-    bottom: 20px; /* Center vertically */
-    left: 25%; /* Center horizontally */
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
     transform: translate(-50%, -50%);
-    opacity: 0; /* Start with 0 opacity */
-    color: #fff;
-    background-color: rgba(255, 87, 51, 0.8); /* Add a semi-transparent background */
-    padding: 10px; /* Add padding for readability */
-    width: 15%; /* Adjust the width as needed */
-    text-align: center; /* Center the text within the details */
     opacity: 0;
-    transition: 0.3s; /* Add fade-out transition */
+    color: #fff;
+    background-color: rgba(255, 87, 51, 0.8);
+    padding: 10px;
+    width: 15%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .product:hover span{
     transition: 1s;
-    opacity: 1; /* Show details on hover */
+    opacity: 1;
 }
 
-/* Style the "Add to Cart" button */
 .product button {
-    position: absolute; /* Position details over the image */
-    top: 75%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    position: absolute;
+    top: 75%;
+    left: 50%;
     opacity: 0;
     display: inline-block;
     background-color: #ff5733;
@@ -305,27 +292,25 @@ nav a:hover {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: 0.3s; /* Add fade-out transition */
+    transition: 0.3s;
 }
 
-/* Add a click effect */
+
 .product button:active {
-    background-color: #333; /* Change the background color when the button is clicked */
+    background-color: #333;
     transform: translate(1%, 10%)
 }
 
 .product:hover button {
-    opacity: 1; /* Show the button on hover */
+    opacity: 1;
 }
 
-/* Add hover effect for the button */
 .product button:hover {
     background-color: #d44226;
     transition: 0.2s;
-    opacity: 1; /* Show details on hover */
+    opacity: 1;
 }
 
-/* Category Filter Buttons Styles */
 .category-filter {
     text-align: center;
     margin-bottom: 20px;
@@ -349,12 +334,10 @@ nav a:hover {
     background-color: #333;
 }
 
-/* Active button style */
 .category-button.active {
-    background-color: #555; /* Change color for the active button */
+    background-color: #555;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #333;
     color: #fff;
@@ -364,34 +347,34 @@ nav a:hover {
 
 .container {
     display: flex;
-    justify-content: center; /* Center-align the container contents horizontally */
-    align-items: center; /* Center-align the container contents vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info,
 .social-links {
     flex: 1;
-    margin: 0 20px; /* Add margin to separate the sections */
+    margin: 0 20px;
 }
 
 .contact-info h4,
 .social-links h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-weight: bold; /* Make the text bold */
-    position: relative; /* Set the position to relative */
-    display: inline-block; /* Display the heading as inline-block */
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
 }
 
 .contact-info h4::after,
 .social-links h4::after {
     content: '';
-    position: absolute; /* Set the position to absolute */
-    width: 100%; /* Make the underline the same width as the heading */
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: red; /* Set the color of the underline */
-    bottom: -5px; /* Position the underline just below the heading */
-    left: 0; /* Position the underline at the left of the heading */
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    left: 0;
 }
 
 .contact-info p {
@@ -403,12 +386,12 @@ nav a:hover {
     display: block;
     color: #fff;
     text-decoration: none;
-    margin-top: 5px; /* Add margin between social links */
+    margin-top: 5px;
     font-size: 16px;
 }
 
 .social-links a i {
-    margin-right: 5px; /* Add space between icon and text */
+    margin-right: 5px;
 }
 
 .social-links a:hover {

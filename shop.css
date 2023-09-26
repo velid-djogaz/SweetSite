@@ -1,17 +1,14 @@
-/* Reset some default styles */
 body, h1, p {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -19,25 +16,24 @@ header {
     text-align: center;
 }
 
-/* Navbar styles */
 nav {
     display: flex;
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-    text-align: right; /* Align the text to the right */
-    padding: 0 100px 10px; /* Add some padding for spacing */
+    text-align: right;
+    padding: 0 100px 10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0; /* Remove any default margin */
+    margin: 0;
     padding: 0;
 }
 
 nav li {
-    display: inline; /* Display list items horizontally */
-    margin-left: 50px; /* Add spacing between list items */
+    display: inline;
+    margin-left: 50px;
 }
 
 nav a {
@@ -51,9 +47,8 @@ nav a:hover {
     color: #ff5733;
 }
 
-/* Logo styles */
 .logo img {
-    height: 30px; /* Adjust the height of your logo */
+    height: 30px;
     padding-bottom: 15px;
 }
 
@@ -63,7 +58,7 @@ nav a:hover {
     border-bottom: 2px solid #fff;
     background-color: transparent;
     color: #fff;
-    margin-right: 5px; /* Add spacing between input and icon */
+    margin-right: 5px;
 }
 
 .search-box input[type="text"]::placeholder {
@@ -75,7 +70,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Style the category filter */
 .category-filter {
     display: flex;
     justify-content: center;
@@ -83,14 +77,13 @@ nav a:hover {
     margin: 20px 0;
 }
 
-/* Style the category buttons */
 .category-button {
     background-color: #ff5733;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin: 0 10px; /* Adjust spacing between buttons as needed */
+    margin: 0 10px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -101,13 +94,11 @@ nav a:hover {
     background-color: #ff2200;
 }
 
-/* Style the product sorting container */
 .product-sort {
     margin-bottom: 20px;
     text-align: right;
 }
 
-/* Style the sorting label */
 .product-sort label {
     font-size: 16px;
     font-weight: bold;
@@ -115,7 +106,6 @@ nav a:hover {
     margin-right: 10px;
 }
 
-/* Style the sorting select box */
 #sort-select {
     padding: 5px;
     font-size: 14px;
@@ -125,27 +115,24 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-/* Style the featured products heading */
 .featured-products {
-    font-size: 24px; /* Adjust the font size for emphasis */
+    font-size: 24px;
     font-weight: bold;
-    color: #333; /* Adjust the color as needed */
+    color: #333;
     text-align: center;
-    margin: 20px 0; /* Add some margin for spacing */
-    text-transform: uppercase; /* Convert text to uppercase for a formal look */
+    margin: 20px 0;
+    text-transform: uppercase;
 }
 
-/* Style the product section */
 .product-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 100px 50px; /* Add padding to the product section to increase margins from screen edge */
+    padding: 20px 100px 50px;
 }
 
-/* Style individual product items */
 .product {
-    flex-basis: calc(25% - 20px); /* Adjust the width and spacing as needed for 4 products per row */
+    flex-basis: calc(25% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #e0e0e0;
@@ -159,39 +146,34 @@ nav a:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style product images */
 .product img {
     max-width: 100%;
     height: auto;
 }
 
-/* Style product titles */
 .product h3 {
     margin-top: 10px;
-    font-size: 20px; /* Increase the font size for emphasis */
+    font-size: 20px;
     font-weight: bold;
-    color: #333; /* Adjust the color as needed */
+    color: #333;
     text-align: center;
-    text-transform: uppercase; /* Convert text to uppercase for a formal look */
+    text-transform: uppercase;
 }
 
-/* Style product descriptions */
 .product p {
-    font-size: 16px; /* Slightly larger font size for readability */
-    color: #555; /* Darker text color for contrast */
+    font-size: 16px;
+    color: #555;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 20px; /* Add some spacing between description and price */
+    margin-bottom: 20px;
 }
 
-/* Style product prices */
 .product .price {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 25px 0;
 }
 
-/* Style Add to Cart buttons */
 .product button.add-to-cart {
     background-color: #ff5733;
     color: #fff;
@@ -210,7 +192,6 @@ nav a:hover {
     background-color: #ff2200;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #333;
     color: #fff;
@@ -220,34 +201,34 @@ nav a:hover {
 
 .container {
     display: flex;
-    justify-content: center; /* Center-align the container contents horizontally */
-    align-items: center; /* Center-align the container contents vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info,
 .social-links {
     flex: 1;
-    margin: 0 20px; /* Add margin to separate the sections */
+    margin: 0 20px;
 }
 
 .contact-info h4,
 .social-links h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-weight: bold; /* Make the text bold */
-    position: relative; /* Set the position to relative */
-    display: inline-block; /* Display the heading as inline-block */
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
 }
 
 .contact-info h4::after,
 .social-links h4::after {
     content: '';
-    position: absolute; /* Set the position to absolute */
-    width: 100%; /* Make the underline the same width as the heading */
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: red; /* Set the color of the underline */
-    bottom: -5px; /* Position the underline just below the heading */
-    left: 0; /* Position the underline at the left of the heading */
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    bottom: -5px; 
+    left: 0;
 }
 
 .contact-info p {
@@ -259,12 +240,12 @@ nav a:hover {
     display: block;
     color: #fff;
     text-decoration: none;
-    margin-top: 5px; /* Add margin between social links */
+    margin-top: 5px;
     font-size: 16px;
 }
 
 .social-links a i {
-    margin-right: 5px; /* Add space between icon and text */
+    margin-right: 5px;
 }
 
 .social-links a:hover {

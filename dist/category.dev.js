@@ -1,22 +1,20 @@
 "use strict";
 
-// JavaScript to handle category filtering and apply active class
 document.addEventListener("DOMContentLoaded", function () {
   var categoryButtons = document.querySelectorAll(".category-button");
-  var products = document.querySelectorAll(".product"); // Function to filter products based on category with fade-in/fade-out animation
+  var products = document.querySelectorAll(".product");
 
   function filterProducts(category) {
     products.forEach(function (product) {
       var productCategories = product.getAttribute("data-category").split(" ");
 
       if (category === "sve" || productCategories.includes(category)) {
-        fadeIn(product); // Fade in matching products
+        fadeIn(product);
       } else {
-        fadeOut(product); // Fade out non-matching products
+        fadeOut(product);
       }
     });
-  } // Function to fade in an element
-
+  }
 
   function fadeIn(element) {
     element.style.display = "block";
@@ -28,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(fadeEffect);
       }
     }, 50);
-  } // Function to fade out an element
-
+  }
 
   function fadeOut(element) {
     element.style.opacity = 1;
@@ -41,16 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(fadeEffect);
       }
     }, 50);
-  } // Initial filter when the page loads (show all products)
+  }
 
-
-  filterProducts("sve"); // Add click event listeners to category buttons
-
+  filterProducts("sve");
   categoryButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       var selectedCategory = button.getAttribute("data-category");
-      filterProducts(selectedCategory); // Add and remove the 'active' class for styling
-
+      filterProducts(selectedCategory);
       categoryButtons.forEach(function (btn) {
         btn.classList.remove("active");
       });
